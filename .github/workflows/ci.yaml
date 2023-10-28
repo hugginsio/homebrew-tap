@@ -3,11 +3,9 @@
 name: ci
 on:
   push:
-  pull_request:
 jobs:
   gen-readme:
     runs-on: ubuntu-latest
-    if: ${{ github.ref == 'refs/heads/main' }}
     permissions:
       contents: write
     steps:
