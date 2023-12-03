@@ -5,7 +5,7 @@
 class GitVwi < Formula
   desc "Git add-on for opening work item details in your browser based on the current branch."
   homepage "https://go.huggins.io/prj/git-view-work-item"
-  version "1.5.1"
+  version "1.6.0"
   license "BSD-2-Clause"
 
   depends_on "git"
@@ -13,16 +13,16 @@ class GitVwi < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.5.1/git-vwi_darwin_arm64.tar.gz"
-      sha256 "6cee1263ad1a5a551ab8512ac02141d79fbeeb54b89a015eb5cf8e4195f8e3b8"
+      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.6.0/git-vwi_darwin_arm64.tar.gz"
+      sha256 "f84b1a08e06ed15362eb80755efe6c8685bab33b7965c09e77b13499627bc635"
 
       def install
         bin.install "git-vwi"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.5.1/git-vwi_darwin_amd64.tar.gz"
-      sha256 "43cf2facc7980e9e2ccec3e322a260fb2bbf965b08b30ca3f735eff87445f2b5"
+      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.6.0/git-vwi_darwin_amd64.tar.gz"
+      sha256 "2680c9fb56f79f7eb418dee494a6b7a204fde7661d135a8c07256d7bbe9c2364"
 
       def install
         bin.install "git-vwi"
@@ -31,17 +31,17 @@ class GitVwi < Formula
   end
 
   on_linux do
-    if Hardware::CPU.intel?
-      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.5.1/git-vwi_linux_amd64.tar.gz"
-      sha256 "cfe2eca805f1943ab12472acc854eaf027ae657568fca326be1e475af7f1065c"
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.6.0/git-vwi_linux_arm64.tar.gz"
+      sha256 "2c3ca66752a05ef4d306c9a53b3a28e815dcc530ca686bbc280485b421cbd56c"
 
       def install
         bin.install "git-vwi"
       end
     end
-    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.5.1/git-vwi_linux_arm64.tar.gz"
-      sha256 "671d58f63633b628741a0eeda25cd93037ac50bae47c15320ecbf31f30c098df"
+    if Hardware::CPU.intel?
+      url "https://github.com/hugginsio/git-view-work-item/releases/download/v1.6.0/git-vwi_linux_amd64.tar.gz"
+      sha256 "6fb9ed3802f513ab7f973dbaad838379e5aad7f7e14dd342add2c473a5895072"
 
       def install
         bin.install "git-vwi"
