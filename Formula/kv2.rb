@@ -5,20 +5,20 @@
 class Kv2 < Formula
   desc ""
   homepage "https://git.huggins.io/kv2"
-  version "0.11.6"
+  version "1.0.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hugginsio/kv2/releases/download/v0.11.6/kv2_darwin_amd64.tar.gz"
-      sha256 "30e77da140ef8ba4bd0ba8efe1f64036490e9ea013d6e6bb6e3fccfb229474ff"
+      url "https://github.com/hugginsio/kv2/releases/download/v1.0.0/kv2_darwin_amd64.tar.gz"
+      sha256 "30cc569ab90bfa59b02fcb77d25f5376c618632e950739ffb4feab263589e2b5"
 
       def install
         bin.install "kv2"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hugginsio/kv2/releases/download/v0.11.6/kv2_darwin_arm64.tar.gz"
-      sha256 "f48c3256e2f1aa8d644f717ca48b7c16dcefa692bfac834614b72b3161e0cd98"
+      url "https://github.com/hugginsio/kv2/releases/download/v1.0.0/kv2_darwin_arm64.tar.gz"
+      sha256 "4db5fd9bbf4fbc8f2be895e32817ad23efdf9a16a0ad40762437c15742c614ac"
 
       def install
         bin.install "kv2"
@@ -29,8 +29,8 @@ class Kv2 < Formula
   on_linux do
     if Hardware::CPU.intel?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hugginsio/kv2/releases/download/v0.11.6/kv2_linux_amd64.tar.gz"
-        sha256 "5eebf9638b3f42acdd3354a7a8e5075810190cf8e2339fbf5ccc11336f45e51b"
+        url "https://github.com/hugginsio/kv2/releases/download/v1.0.0/kv2_linux_amd64.tar.gz"
+        sha256 "8ac85932fd16c6bf5070a4412396ea9d6609c1bad2652fe48b2f74470365da8a"
 
         def install
           bin.install "kv2"
@@ -39,8 +39,8 @@ class Kv2 < Formula
     end
     if Hardware::CPU.arm?
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/hugginsio/kv2/releases/download/v0.11.6/kv2_linux_arm64.tar.gz"
-        sha256 "55a21ebf55da03caaa388b0b42e341a464172987e603dd00717b6bb9eedaed0f"
+        url "https://github.com/hugginsio/kv2/releases/download/v1.0.0/kv2_linux_arm64.tar.gz"
+        sha256 "cbd96c637ce02089882ba29bc024f4cfaef7a81bad7dbb6b7a234ce93a6f1877"
 
         def install
           bin.install "kv2"
