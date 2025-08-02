@@ -5,20 +5,20 @@
 class Dev < Formula
   desc ""
   homepage "https://huggins.dev/dev"
-  version "1.1.0"
+  version "1.2.0"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/hugginsio/dev/releases/download/v1.1.0/dev_darwin_amd64.tar.gz"
-      sha256 "edd2bb3801c4277952e0e1eb1bf0a41bb3d4dd956e9ceea5ae4ee83b4d400289"
+      url "https://github.com/hugginsio/dev/releases/download/v1.2.0/dev_darwin_amd64.tar.gz"
+      sha256 "201ad86ba8ab6fd6e2c727406f5a1d09acd01353b79117dc18162754a2e59225"
 
       def install
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/hugginsio/dev/releases/download/v1.1.0/dev_darwin_arm64.tar.gz"
-      sha256 "a03e68ca400228f9b5b02ba3c2c979ef6a518968da2c0c34e497524eaf22dd18"
+      url "https://github.com/hugginsio/dev/releases/download/v1.2.0/dev_darwin_arm64.tar.gz"
+      sha256 "b94b570dba8653f4ddb8024ac9d9dba44570890f1d1571a2dc13683cd4234bd8"
 
       def install
         bin.install "dev"
@@ -28,15 +28,15 @@ class Dev < Formula
 
   on_linux do
     if Hardware::CPU.intel? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hugginsio/dev/releases/download/v1.1.0/dev_linux_amd64.tar.gz"
-      sha256 "3eeba3ea532dc6cd913c38327f34150d888d33042729cd4af12b1c17e27cafcc"
+      url "https://github.com/hugginsio/dev/releases/download/v1.2.0/dev_linux_amd64.tar.gz"
+      sha256 "5a1445bc96d169c95b94a0876f6d4f5179f6f2c149035ffa5a7cc2bd0b50d699"
       def install
         bin.install "dev"
       end
     end
     if Hardware::CPU.arm? and Hardware::CPU.is_64_bit?
-      url "https://github.com/hugginsio/dev/releases/download/v1.1.0/dev_linux_arm64.tar.gz"
-      sha256 "e84e60e76c989fa3a8881ec100ed65bdfab05b88cbf0d69596b30f62338b675e"
+      url "https://github.com/hugginsio/dev/releases/download/v1.2.0/dev_linux_arm64.tar.gz"
+      sha256 "5db185f351180d77d565cf230f7e681b976fdf6613bb016b52b3ac0365456362"
       def install
         bin.install "dev"
       end
