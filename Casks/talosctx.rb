@@ -3,7 +3,7 @@ cask "talosctx" do
   name "talosctx"
   desc "Faster context switching for `talosctl`"
   homepage "https://huggins.dev/talosctx"
-  version "0.2.0"
+  version "0.2.1"
 
   livecheck do
     skip "Auto-generated on release."
@@ -15,22 +15,22 @@ cask "talosctx" do
   on_macos do
     on_intel do
       url "https://github.com/hugginsio/talosctx/releases/download/v#{version}/talosctx_darwin_amd64.tar.gz"
-      sha256 "89d5c639d41ba5eaaa9a6b829f80ee83bb85cbebffb1146fdd67776d7ce4f16c"
+      sha256 "191017eafde7ce506e05417d6c0151dee4b0c82d32d0e7240335c0b6a630faca"
     end
     on_arm do
       url "https://github.com/hugginsio/talosctx/releases/download/v#{version}/talosctx_darwin_arm64.tar.gz"
-      sha256 "dd777df7408d6461f0ec8bd917e83c454bd056c3e4d4bf1fb3cc6c763c70025a"
+      sha256 "83fa63627dfc1dd5581ae08a48ebd5bc413e795b8dae8e42f83b7d6848df1c18"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hugginsio/talosctx/releases/download/v#{version}/talosctx_linux_amd64.tar.gz"
-      sha256 "a482b14242b1654f8189ade1ac2161b4e88671343baef5190997e0599009e80a"
+      sha256 "def3b16f3d11e85b47676f843ab74dad6c545a5ad35d5f4c5ed119b9682b5b3e"
     end
     on_arm do
       url "https://github.com/hugginsio/talosctx/releases/download/v#{version}/talosctx_linux_arm64.tar.gz"
-      sha256 "053919c55cdf88150ba1e9cf88db0346f4bc707e5bd7a4e75d545e03349730b1"
+      sha256 "af8e61e0b7d9b9bb7898f576b82f92e0595df806fdf113f4aea9cd00a207d7b9"
     end
   end
 
