@@ -5,22 +5,22 @@ cask "taskkit" do
   on_macos do
     on_intel do
       url "https://github.com/hugginsio/taskkit/releases/download/v#{version}/taskkit_darwin_amd64.tar.gz"
-      sha256 "b347583a2796dc953063f8a07390d99c037de974b0ed79d4799b4ffd977a6666"
+      sha256 "8e0958c074959f66fd31018471d38b5cbf46093a6bd26b777528f9c39dd481e2"
     end
     on_arm do
       url "https://github.com/hugginsio/taskkit/releases/download/v#{version}/taskkit_darwin_arm64.tar.gz"
-      sha256 "2fb38c34ef16379c1e2c3e9e55b3379bf9253a038191cfa85e3ed6237a0d1162"
+      sha256 "bf332eb41eb57bca6e40e59dccfb9e0fc09281c2eb878cc5eac0e7ad20dd82ba"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/hugginsio/taskkit/releases/download/v#{version}/taskkit_linux_amd64.tar.gz"
-      sha256 "d3ebbaaff03437d0c59d4dde597dd66097aac943d62ab4418e43c33072fa8923"
+      sha256 "d4cc95ce6c5e627984803c41e44317104e0866c0e5d0487e08e2615114bc4d1b"
     end
     on_arm do
       url "https://github.com/hugginsio/taskkit/releases/download/v#{version}/taskkit_linux_arm64.tar.gz"
-      sha256 "2ce07139d787a3f38025e6a8c19734a63b6c33545aff4cb8231ba42fb9a7ef88"
+      sha256 "e9404d2f83b93087d1f1393c808c433c14a26d7e2d98618ba2a82f7b08a67354"
     end
   end
 
